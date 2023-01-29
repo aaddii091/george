@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" type="text/css" />
+    <script defer src="main.js"></script>
+
+    <title>JUJUTSU</title>
+  </head>
+  <body id="bod" class="">
+    <main class="ok">
+      <nav>
+        <div class="nav">
+          <div class="comp_name">
+            <h1>Merlin</h1>
+          </div>
+
+          <ul class="nav_cont">
+            <li class="nav_cont_1 nature">
+              <a class="hover-underline-animation" href="Nature"> Nature</a>
+            </li>
+            <li class="nav_cont_1 metro">
+              <a class="hover-underline-animation" href="Metropolitan">
+                Metropolitan</a
+              >
+            </li>
+            <li class="nav_cont_1 about">
+              <a class="hover-underline-animation" href="About"> About Us</a>
+            </li>
+            <li class="nav_cont_1 contact">
+              <a class="hover-underline-animation" href="Contact"> Contact</a>
+            </li>
+          </ul>
+        </div>
+        <header>
+          <h2 class="welcome">Welcome</h2>
+        </header>
+      </nav>
+    </main>
+    <section class="sec_1">
+      <h1 class="den">DENMARK</h1>
+      <div class="image">
+        <div class="sec_cont_1">
+          <!-- <h1>Nature</h1> -->
+          <button type="button" class="btn" onclick="DopeFun()">
+            <a href="#">VIEW</a>
+          </button>
+          <!-- <h1>d</h1> -->
+        </div>
+      </div>
+    </section>
+    <div class="slid hidden" id="slider1">
+      <div class="slider effect"></div>
+      <div class="overlay hidden effect" id="over"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(window).scroll(function () {
+        $(".welcome").css("opacity", 1 - $(window).scrollTop() / 200);
+        $(".den").css("opacity", 0 + $(window).scrollTop() / 550);
+        $(".sec_cont_1").css("opacity", 0 + $(window).scrollTop() / 950);
+      });
+    </script>
+  </body>
+</html>
